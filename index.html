@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transactions</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+
+</head>
+
+<body>
+    <main>
+        <section id="customer" class="my-5 py-5">
+            <div class="container">
+                <h1 class="text-center text-white mb-5">
+                    Customer Transactions
+                </h1>
+                <div class="row g-4  ">
+                    <div class="col-md-12">
+
+                        <div class="form-floating mb-3 ">
+                            <input type="search" class="form-control rounded-5" id="search"
+                                placeholder="search by customer name">
+                            <label for="floatingInput" class="text-dark">search by customer name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12 content ">
+                        <table class="table  table-striped table-bordered text-center border border-5 shadow ">
+                            <thead>
+                                <tr class="table-primary">
+                                    <th class="p-3">Name</th>
+                                    <th class="p-3">Total Transaction Amount</th>
+                                    <th class="p-3">Transactions per day</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-3"></td>
+                                    <td class="p-3"></td>
+                                    <td class="p-3"><button type="button" class="btn btn-outline-primary">View</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="text-center text-info ">Please click on View to show transactions graph.</h4>
+                    </div>
+                    <div class="col-md-12 ">
+                        <div class="notFount d-none d-flex justify-content-center align-items-center flex-column">
+
+                            <img src="./img/no-data.PNG" class="text-center" alt="">
+                            <p class="lead py-5">No results found</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<div class="container d-none my-5 chart bg-white w-100  m-auto ">
+    <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./Js/jquery-3.7.1.min.js"></script>
+    <script src="./Js/main.js"></script>
+
+</body>
+
+</html>

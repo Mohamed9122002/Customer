@@ -1,0 +1,25 @@
+:root {
+    --main-color: #272b30;
+    --seconde-color: #32383e;
+    --color-text: #fff;
+    --btn-main-color: #272729;
+}
+
+body {
+    background-color: #272729;
+    color: #fff;
+}
+
+ tr {
+
+    text-align: center;
+    color: #4f4f4f;
+    border: 2px solid rgb(65, 84, 122);
+
+}
+
+@media (min-width: 992px) {
+    .chart{
+        width: 50% !important;
+    }
+}
